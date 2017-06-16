@@ -1,6 +1,14 @@
-# Hello-World
-Trying my hand on pet project making
+# Code-notebook
 
-This is my first time working on GitHub. Hoping to make a facebook chatbot soon
+## Everything and anything that's not part of a project goes here
+## Includes: 
+
+
+* Notes
+* Dead projects
+* Junk files
+* Tests
+* Code Snippets
+
 
 

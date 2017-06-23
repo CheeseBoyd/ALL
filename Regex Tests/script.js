@@ -74,57 +74,26 @@ var fun = (messageText)=> {
 
 console.log(fun("hola negra"));
 
+
+
+
 let speech = {
   greet: ["hello", "hi", "hola"],
   goodbye:  ["bye", "goodbye", "good bye", "good-bye", "bye-bye","bye bye"],
-  inquire: ["what", "?", "help","do something"]
-}
-var sp = Object.keys(speech);
-// console.log(sp);
-
-console.log("Break-----------Break");
-
-sp.forEach(function(item){
-  if(speech[item][0]) {
-   //  console.log(speech[item][0]);
-  }
-
-});
-
-/*
-
-var keys = Object.keys(speech);
-var count = 0;
-for(var object of keys){
-  console.log(speech[object].length);
-  if(speech[object][count]) {
-    console.log(speech[object]);
-  }
-  count++;
-  console.log("break");
+  inquire: ["what?","what", "help","do something"]
 }
 
-*/
 
 var keys = Object.keys(speech);
 
-for(var object of keys){
-  // len of each speech array
-  console.log(speech[object].length);
+function filterBySpeech(){
 
-  // output every item in each array
-  for(var ob = 0;ob < speech[object].length; ob++) {
-    console.log(speech[object][ob]);
-  }
+	keys.forEach(function(keys){
+		console.log("List of known words in " + keys)
+		for(var i = 0;i < speech[keys].length; i++) {
+	  }
+	  return speech[keys][i];
+	});
+
+	return keys;
 }
-
-
-
-/*
-for(var ob in speech) {
-  console.log(ob);
-  for(var ob2 in ob) {
-    console.log(ob2);
-  }
-}
-*/

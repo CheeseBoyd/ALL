@@ -1,4 +1,8 @@
 let carFactory = {
+	prop: 'cheese',
+	changeProp: function(str) {
+		return this.prop = str
+	},
 	createCar: (color, model, type) => {
 		return {
 			model: model,
@@ -7,5 +11,7 @@ let carFactory = {
 		}
 	}
 }
+
+	
 
 module.exports = carFactory;

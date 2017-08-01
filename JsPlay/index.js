@@ -12,10 +12,10 @@ function doCallback(obj, callback){
 
 let car = factoryFunctions.createCar("red", "2017 BMW", "Sedan")
 
-console.log(doCallback(car, function(color, model, type){
+/*console.log(doCallback(car, function(color, model, type){
 	return color
 }))
+*/
 
-
-factoryFunctions.changeProp('wine')
-console.log(factoryFunctions.prop)
+factoryFunctions.changeProp('nuts')
+console.log(factoryFunctions.giveFood())

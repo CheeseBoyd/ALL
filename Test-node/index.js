@@ -12,8 +12,6 @@ console.log(speech.get());
 console.log(speech.statement);
 speech.foo();
 
-
-
 // Escapes regex
 function escapeRegExp(str) {
   return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
